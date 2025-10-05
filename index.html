@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Search App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+
+    <main>
+        <section class="my-5">
+            <div class="container w-50 d-flex first">
+                <input type="search" class="form-control border-2" id="item" placeholder="Search By Meal Name"
+                    autocomplete="off">
+                <label for="item"></label>
+                <div>
+                    <button class="btn btn-info ms-2 text-white px-3" id="search">
+                        Search
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-5">
+            <div class="container">
+                <div class="row g-4" id="data">
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 " id="exampleModalLabel">Recipe Details</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="errorrs position-relative d-none w-50 m-auto text-center">
+            <i class="fa-solid fa-search text-danger mb-4"></i>
+            <h3>No Results Found</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos minus eligendi neque velit soluta, sit
+                quidem voluptatem at. Nihil, aut.
+            </p>
+        </section>
+    </main>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
